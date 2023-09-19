@@ -7,7 +7,7 @@ import { Class, getClassColor } from '../../interfaces/Class';
 import { Resource } from '../../interfaces/Resource';
 import { Schedule } from '../../interfaces/Schedule';
 import { colors, fonts } from '../../styles/Theme';
-import { Cell, Header, Table } from './TableStyles';
+import { Cell, Header, Table_Daily } from './TableStyles';
 
 const Id = styled.span`
     padding-left: 20px;
@@ -67,13 +67,6 @@ const DailyTable = () => {
         'Friday'
     ];
 
-    const buildTag = () => {
-        if (!schedule) return '';
-
-        const { nomeDisciplina, numeroDaTurma, predio, sala } =
-            schedule.identificadorCronograma;
-        return `CODCRED | ${nomeDisciplina} (${numeroDaTurma}) - ${predio}/${sala}`;
-    };
 
     const buildHeaders = () =>
         headers.map((header, index) => (
@@ -180,10 +173,10 @@ const DailyTable = () => {
             {/* <TableTag backgroundColor={colors.themeTertiary}>
                 {buildTag()}
             </TableTag> */}
-            <Table proportions={[1, 1.5, 2, 2, 2, 2, 2]}>
+            <Table_Daily proportions={[1, 1.5, 2, 2, 2, 2, 2]}>
                 {buildHeaders()}
                 {buildTable()}
-            </Table>
+            </Table_Daily>
         </>
     );
 };

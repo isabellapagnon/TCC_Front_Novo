@@ -1,9 +1,12 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable simple-import-sort/imports */
+/* eslint-disable prettier/prettier */
 /* eslint-disable arrow-body-style */
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { colors, fonts } from '../styles/Theme';
 
 const SidebarLink = styled(Link)`
   display: flex;
@@ -31,17 +34,18 @@ const SidebarLabel = styled.span`
 `;
 
 const DropdownLink = styled(Link)`
-  background: #DEFFFF;
+  background: #00A2A5;
   height: 50px;
   padding-left: 3rem;
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-family: Montserrat, sans-serif;
   color: #000;
   font-size: 18px;
 
   &:hover {
-    background: #632ce4;
+    background: #AAE3E4;
     cursor: pointer;
   }
 `;

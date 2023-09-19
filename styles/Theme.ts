@@ -5,6 +5,7 @@ export const colors = {
     themeSecondary: '#55CBCD',
     themePrimary: '#000000',
     themeLight: '#FFFFFF',
+    themeDarker: '#8DCDC8',
     actPS: '#C06A4F',
     actFeriado: '#A6A6A6',
     actTrabalho: '#F2CC8F',
@@ -28,13 +29,19 @@ export const fonts = {
     },
     headline2: {
         padrão,
-        fontSize: '20px',
+        fontSize: '28px',
         fontWeight: '500',
         fontFamily: 'Roboto, sans-serif'
     },
     headline3: {
         padrão,
         fontSize: '18px',
+        fontWeight: '500',
+        fontFamily: 'Roboto, sans-serif'
+    },
+    headline4: {
+        padrão,
+        fontSize: '46px',
         fontWeight: '500',
         fontFamily: 'Roboto, sans-serif'
     },

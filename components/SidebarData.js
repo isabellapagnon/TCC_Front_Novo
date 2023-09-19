@@ -13,36 +13,36 @@ export const SidebarData = [
     path: '/home',
      icon: <AiIcons.AiFillHome />,
   },
-  {
-    title: 'Backlog',
-    path: '/backlog',
-    icon: <AiIcons.AiFillHome />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
+  // {
+  //   title: 'Backlog',
+  //   path: '/backlog',
+  //   icon: <AiIcons.AiFillHome />,
+  //   iconClosed: <RiIcons.RiArrowDownSFill />,
+  //   iconOpened: <RiIcons.RiArrowUpSFill />,
 
-    subNav: [
-      {
-        title: 'New Sprint Board',
-        path: '/backlog/new',
-         icon: <IoIcons.IoIosPaper />
-      },
-      {
-        title: 'History',
-        path: '/backlog/history',
-         icon: <IoIcons.IoIosPaper />
-      },
-      {
-        title: 'Agile metrics',
-        path: '/backlog/agile',
-         icon: <IoIcons.IoIosPaper />
-      },
-      {
-        title: 'Participation metrics',
-        path: '/backlog/participation',
-         icon: <IoIcons.IoIosPaper />
-      }
-    ]
-  },
+  //   subNav: [
+  //     {
+  //       title: 'New Sprint Board',
+  //       path: '/backlog/new',
+  //        icon: <IoIcons.IoIosPaper />
+  //     },
+  //     {
+  //       title: 'History',
+  //       path: '/backlog/history',
+  //        icon: <IoIcons.IoIosPaper />
+  //     },
+  //     {
+  //       title: 'Agile metrics',
+  //       path: '/backlog/agile',
+  //        icon: <IoIcons.IoIosPaper />
+  //     },
+  //     {
+  //       title: 'Participation metrics',
+  //       path: '/backlog/participation',
+  //        icon: <IoIcons.IoIosPaper />
+  //     }
+  //   ]
+  // },
   {
     title: 'Daily',
     path: '/daily',
@@ -70,31 +70,31 @@ export const SidebarData = [
       }
     ]
   },
-  {
-    title: 'Retrospective',
-    path: '/Retrospective',
-     icon: <FaIcons.FaEnvelopeOpenText />,
+  // {
+  //   title: 'Retrospective',
+  //   path: '/retrospective',
+  //    icon: <FaIcons.FaEnvelopeOpenText />,
 
-     iconClosed: <RiIcons.RiArrowDownSFill />,
-     iconOpened: <RiIcons.RiArrowUpSFill />,
-    subNav: [
-      {
-        title: 'New Board',
-        path: '/retrospective/new',
-         icon: <IoIcons.IoIosPaper />
-      },
-      {
-        title: 'History',
-        path: '/retrospective/history',
-         icon: <IoIcons.IoIosPaper />
-      },
-      {
-        title: 'Participation metrics',
-        path: '/retrospective/participation',
-         icon: <IoIcons.IoIosPaper />
-      }
-    ]
-  },
+  //    iconClosed: <RiIcons.RiArrowDownSFill />,
+  //    iconOpened: <RiIcons.RiArrowUpSFill />,
+  //   subNav: [
+  //     {
+  //       title: 'New Board',
+  //       path: '/retrospective/new',
+  //        icon: <IoIcons.IoIosPaper />
+  //     },
+  //     {
+  //       title: 'History',
+  //       path: '/retrospective/history',
+  //        icon: <IoIcons.IoIosPaper />
+  //     },
+  //     {
+  //       title: 'Participation metrics',
+  //       path: '/retrospective/participation',
+  //        icon: <IoIcons.IoIosPaper />
+  //     }
+  //   ]
+  // },
   {
     title: 'Support',
     path: '/support',

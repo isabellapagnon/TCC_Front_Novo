@@ -57,20 +57,6 @@ const TitleGroup = styled.div`
     }
 `;
 
-const Title = styled.div`
-    font: ${fonts.headline1};
-    color: ${colors.themeTertiary};
-    @media screen and (max-width: 860px) {
-        padding-right: 10%;
-    }
-`;
-
-const Subtitle = styled.div`
-    font: ${fonts.headline2};
-    color: ${colors.themeTertiary};
-    align-items: center;
-`;
-
 const ButtonSection = styled.div`
     display: flex;
     min-width: 200px;
@@ -92,7 +78,34 @@ const Logo = styled.div`
     // }
 `;
 
-const Header = () => {
+const Title = styled.div`
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    top: 25px;
+    left: 550px;
+    font: ${fonts.headline4};
+    color: ${colors.themeDarker};
+    @media screen and (max-width: 860px) {
+        padding-right: 10%;
+    }
+`;
+
+const Subtitle = styled.div`
+    font: ${fonts.headline2};
+    color: ${colors.themeDarker};
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    top: 80px;
+    left: 536px;
+`;
+
+const DailyHeader = () => {
     const [showLoginForm, setShowLoginForm] = useState(false);
 
     const removeLoginForm = () => {
@@ -106,10 +119,10 @@ const Header = () => {
                 <HomeHeader>
                     <TitleGroup>
                         <Title>SWAT Team</Title>
-                        <Subtitle>ADP</Subtitle>
+                        <Subtitle>Daily</Subtitle>
                     </TitleGroup>
 
-                    <ButtonSection>
+                    {/* <ButtonSection>
                         <PrimaryButton
                             text={'Login'}
                             onClick={() => setShowLoginForm(true)}
@@ -117,11 +130,11 @@ const Header = () => {
                     </ButtonSection>
                     {showLoginForm ? (
                         <LoginForm onClick={removeLoginForm}></LoginForm>
-                    ) : null}
+                    ) : null} */}
                 </HomeHeader>
             </HeaderSection>
         </>
     );
 };
 
-export default Header;
+export default DailyHeader;

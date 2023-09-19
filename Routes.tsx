@@ -5,21 +5,16 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
-import ProfessorArea from './pages/ProfessorArea';
 import Schedule from './pages/Schedule';
-import Retrospective from './pages/Retrospective';
-import Backlog from './pages/Backlog';
+import Daily from './pages/Daily';
 
 const Navigation = () => (
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/area-professor" element={<ProfessorArea />} />
-            <Route path="/cronograma" element={<Schedule />} />
             <Route path='/home' element={<Home />} />
-            {/* <Route path='/daily' element={<Daily />} /> */}
-            <Route path='/backlog' element={<Backlog />} />
-            <Route path='/retrospective' element={<Retrospective />} />
+            <Route path='/daily' element={<Daily />} />
+            <Route path="/cronograma" element={<Schedule />} />
         </Routes>
     </BrowserRouter>
 );

@@ -41,18 +41,39 @@ export const Header = styled.div<HeaderProps>`
 `;
 
 export const ShowWeekHeader = styled.div<HeaderProps>`
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     font: ${fonts.headline1};
     background-color: ${colors.themeTertiary};
-    width: 100%;
-    height: 85px;
-     max-height: 8.5vh;
+    width: 35%;
+    top: 154px;
+    left: 550px;
+    padding: 27px;
+    max-height: 5.5vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     
+    // ${props => props.isFirst && `border-top-left-radius: 25px;`}
+    // ${props => props.isLast && `border-top-right-radius: 25px;`}
+`;
 
-    ${props => props.isFirst && `border-top-left-radius: 10px;`}
-    ${props => props.isLast && `border-top-right-radius: 10px;`}
+export const Table_Daily = styled.div<TableProps>`
+    display: grid;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 84%;
+    left: 250px;
+    padding: 20px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 20px 20px 20px 20px;
+    background-color: ${colors.themeHelper};
+    grid-template-columns: ${props => `${props.proportions.join('fr ')}fr`};
 `;
 
 export interface CellProps {
