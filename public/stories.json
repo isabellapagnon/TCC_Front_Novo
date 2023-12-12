@@ -1,0 +1,85 @@
+[
+    {
+      "id": 1,
+      "title": "[SP01] [US01] - 1. Frontend Setup - React",
+      "readyDev": false,
+      "inDev": false,
+      "testing": false,
+      "readyDeploy": false,
+      "done": true
+    },
+    {
+      "id": 2,
+      "title": "[SP01][US02] - Create user tab",
+      "readyDev": false,
+      "inDev": false,
+      "testing": false,
+      "readyDeploy": false,
+      "done": true
+    },
+    {
+      "id": 3,
+      "title": "[SP01][US03] - DB user table creation",
+      "readyDev": false,
+      "inDev": false,
+      "testing": false,
+      "readyDeploy": true,
+      "done": false
+    },
+    {
+        "id": 4,
+        "title": "[SP01][US04] - DB groups table creation",
+        "readyDev": false,
+        "inDev": false,
+        "testing": false,
+        "readyDeploy": true,
+        "done": false
+      },
+      {
+        "id": 5,
+        "title": "[SP01][US05] - DB P.A table creation",
+        "readyDev": false,
+        "inDev": false,
+        "testing": true,
+        "readyDeploy": false,
+        "done": false
+      },
+      {
+        "id": 6,
+        "title": "[SP01][US06] - Modeling DTO for UserTab",
+        "readyDev": false,
+        "inDev": true,
+        "testing": false,
+        "readyDeploy": false,
+        "done": false
+      },
+      {
+        "id": 7,
+        "title": "[SP01][US07] - Unit Test Smoke Test creation",
+        "readyDev": false,
+        "inDev": true,
+        "testing": false,
+        "readyDeploy": false,
+        "done": false
+      },
+      {
+        "id": 8,
+        "title": "[SP02][US08] - POM file update latest version",
+        "readyDev": true,
+      "inDev": false,
+      "testing": false,
+      "readyDeploy": false,
+      "done": false
+      }
+      ,
+      {
+        "id": 9,
+        "title": "[SP02][US09] - Change Gradle to Maven",
+        "readyDev": true,
+        "inDev": false,
+        "testing": false,
+        "readyDeploy": false,
+        "done": false
+      }
+
+    ]
